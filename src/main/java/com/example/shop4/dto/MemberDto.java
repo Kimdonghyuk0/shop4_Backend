@@ -2,6 +2,7 @@ package com.example.shop4.dto;
 
 import com.example.shop4.entity.Comment;
 import com.example.shop4.entity.Member;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -26,7 +27,7 @@ public class MemberDto {
     private LocalDate birth;
     private String gender;
     private String userId;
-    private String userPw;
+    private String userPw;  
     private Long cash;
     private Set<Comment> likedComments = new HashSet<>();
     private List<String> friends;
